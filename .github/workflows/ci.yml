@@ -23,7 +23,7 @@ jobs:
       run: |
         poetry install
         sudo apt-get install ruby-full
-        gem install hiptest-publisher
+        gem install hiptest-publisher --user-install
 
     - name: Regenerate tests
       run: hiptest-publisher --config-file hiptest-publisher.config --test-run-id 912056 --without=actionwords
