@@ -27,4 +27,4 @@ class ATM:
             self.account = None
             return True
         else:
-            return False
+            return False # no card to return
