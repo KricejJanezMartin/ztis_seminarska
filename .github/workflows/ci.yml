@@ -27,7 +27,7 @@ jobs:
     - name: Install hiptest-publisher
       run: |
         gem install hiptest-publisher --user-install
-        echo "::add-path::$HOME/.local/share/gem/ruby/3.2.0/bin"
+        echo "$HOME/.local/share/gem/ruby/3.2.0/bin" >> $GITHUB_PATH
 
     - name: Regenerate tests
       run: hiptest-publisher --config-file hiptest-publisher.config --test-run-id 912099 --without=actionwords
