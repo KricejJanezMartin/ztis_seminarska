@@ -1,0 +1,167 @@
+---
+- name: 'a feature file named "p1" with content:'
+  uid: 6ea4a40e-4e76-41f2-8335-50519faef938
+  parameters:
+  - name: p1
+  - name: __free_text
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: '"p1" imports the feature file "p2" to folder "p3"'
+  uid: 9a213afc-1abe-42c4-96fd-e70919b071ff
+  parameters:
+  - name: p1
+  - name: p2
+  - name: p3
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: '"p1" should get a folder "p2" under the folder "p3" with the scenarios:'
+  uid: 002f7592-b740-405e-97ba-4f3b5c1c555c
+  parameters:
+  - name: p1
+  - name: p2
+  - name: p3
+  - name: __datatable
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: two scenarios
+  uid: 48c0729a-b14f-41b1-bfa5-3abdaa321348
+  parameters:
+  - name: __free_text
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: '"p1" renames globally the step "p2"response"p3" by "p4"response"p5"'
+  uid: 17898b22-28e8-48c2-bc12-d8a629b39f5a
+  parameters:
+  - name: p1
+  - name: p2
+  - name: p3
+  - name: p4
+  - name: p5
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: 'the scenarios using step "p1"response"p2" should be:'
+  uid: 2a39e6f9-b048-486f-bedb-6808b1f54350
+  parameters:
+  - name: p1
+  - name: p2
+  - name: __free_text
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Bob creates a new step "p1"day"p2"
+  uid: 7a8067dc-b84b-496c-b984-1a28551b8831
+  parameters:
+  - name: p1
+  - name: p2
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: changes the two scenarios as
+  uid: aa42e4d4-7715-4a76-8863-bc83bf23cec7
+  parameters:
+  - name: __free_text
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: Bob has only the step "p1"day"p2" to maintain instead of these two
+  uid: 7b8ccba3-a4a1-4c56-b8bf-83dbd5f9bc5c
+  parameters:
+  - name: p1
+  - name: p2
+  - name: __datatable
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: '"p1" adds a new scenario "p2" with the content'
+  uid: 91826e9a-d0e7-4fb4-8456-a9690c24b703
+  parameters:
+  - name: p1
+  - name: p2
+  - name: __free_text
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the datatable
+  uid: cb363499-16e7-4244-83cb-3d8ed0b5de32
+  parameters:
+  - name: __datatable
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: '"p1" has a scenario "p2" to describe the same behaviour than these scenarios'
+  uid: 86ee8c1c-ae98-4812-96f8-26bb8f13f564
+  parameters:
+  - name: p1
+  - name: p2
+  - name: __datatable
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: 'a folder "p1" with the scenarios:'
+  uid: b9591628-cb12-4c66-ae91-d6e7d4a9df16
+  parameters:
+  - name: p1
+  - name: __datatable
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: '"p1" download folder "p2"'
+  uid: b2e4933a-6a98-4a7a-bc82-5265f897865c
+  parameters:
+  - name: p1
+  - name: p2
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: '"p1" should get a feature file "p2" with content:'
+  uid: ba8f88a0-e6d2-4042-bb1b-38b9d1800d29
+  parameters:
+  - name: p1
+  - name: p2
+  - name: __free_text
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the account balance is $100
+  uid: e06fbb24-811f-4e29-affe-cffce24debaa
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the card is valid
+  uid: 77a6b213-e0d6-474d-ab06-6aafa46c74d1
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the machine contains enough money
+  uid: f492be2f-7a35-4bc2-987d-37e6d35e587c
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the Account Holder requests $20
+  uid: f4f99511-1de4-4340-8a0a-b836f464c2d8
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the ATM should dispense $20
+  uid: 6375188e-b176-4b5e-a026-506b49df9a73
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the account balance should be $80
+  uid: '02224679-3c6a-4c97-b100-b0b4336211e7'
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the card should be returned
+  uid: 772d5353-9a92-4382-a492-308cb5a05f2e
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the account balance is $10
+  uid: ef5b211b-61d4-476e-a555-d71916879bbf
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the ATM should not dispense any money
+  uid: edd3fc69-a9db-49e7-8ac5-a750e1736a79
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the ATM should say there are insufficient funds
+  uid: 236d518a-ead8-415d-9ff9-2911de1186a0
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the account balance should be $10
+  uid: 3f7800ab-af01-4c21-acb9-b951484cecf8
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the card is disabled
+  uid: ec48dc05-6913-4c9a-a0fe-5d14074598b5
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the ATM should retain the card
+  uid: 2ca4e965-5d52-444a-aa74-0f4b444cf00c
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the ATM should say the card has been retained
+  uid: ca4092e0-ce2c-4c5d-93bf-ef960e56fe82
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the machine contains only $10
+  uid: 4a2936ab-427f-41b9-8da2-6cdb864f20c1
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the ATM should say it has insufficient funds
+  uid: 632d0545-f3cc-4321-b229-ac9996e89195
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the account balance should be $100
+  uid: 03f2cf4b-e6de-4d5b-b7ae-9678bbbdcd22
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
