@@ -26,7 +26,7 @@ jobs:
         gem install hiptest-publisher
 
     - name: Regenerate tests
-      run: hiptest-publisher --config-file hiptest-publisher.config --test-run-id 912056 --without=actionwords
+      run: hiptest-publisher --config-file hiptest-publisher.config --test-run-id 912099 --without=actionwords
 
     - name: Run tests
       run: poetry run pytest
