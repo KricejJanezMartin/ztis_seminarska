@@ -5,6 +5,6 @@ class Account:
     def withdraw(self, amount):
         if self.balance >= amount:
             self.balance -= amount
-            return amount
+            return amount # Successful withdrawal
         else:
-            return 0
+            return 0 # Not enough money
