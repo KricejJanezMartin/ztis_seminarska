@@ -1,6 +1,6 @@
 # encoding: UTF-8
 import unittest
-from actionwords import Actionwords
+from tests.actionwords import Actionwords
 
 class TestZTIS(unittest.TestCase):
     def setUp(self):

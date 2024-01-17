@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.spec
+.ipynb_checkpoints
+.venv/
+.env
+*.log
+*.sqlite
+.DS_Store
+
+# Poetry specific
+/poetry.lock
+/pyproject.toml
+/.pytest_cache/
