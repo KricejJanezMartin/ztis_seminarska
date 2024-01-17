@@ -27,14 +27,14 @@ jobs:
 
     - name: Install hiptest-publisher
       run: gem install hiptest-publisher
-      
+
     - name: List files and display config file
       run: |
         ls -l
-        cat hiptest-publisher.config   
+        cat hiptest-publisher.conf   
 
     - name: Regenerate tests
-      run: hiptest-publisher --config-file hiptest-publisher.config --test-run-id 912056 --without=actionwords
+      run: hiptest-publisher --config-file hiptest-publisher.conf --test-run-id 912056 --without=actionwords
 
     - name: Run tests
       run: poetry run pytest
