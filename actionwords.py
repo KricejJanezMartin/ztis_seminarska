@@ -1,8 +1,8 @@
 # encoding: UTF-8
 
-from atm import ATM
-from card import Card
-from account import Account
+from src.atm import ATM
+from src.card import Card
+from src.account import Account
 
 class Actionwords:
     def __init__(self, test):
