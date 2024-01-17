@@ -19,12 +19,14 @@ jobs:
       run: |
         curl -sSL https://install.python-poetry.org | python3 -
 
-    - name: Install dependencies
-      run: |
-        poetry install
-        sudo apt-get install ruby-full
-        gem install hiptest-publisher --user-install
-        echo "/home/runner/.local/share/gem/ruby/3.0.0/bin" >> $GITHUB_PATH
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0' # Use the same Ruby version as before
+        bundler-cache: true # This will run 'bundle install' and cache installed gems automatically
+
+    - name: Install hiptest-publisher
+      run: gem install hiptest-publisher
 
     - name: Regenerate tests
       run: hiptest-publisher --config-file hiptest-publisher.config --test-run-id 912056 --without=actionwords
