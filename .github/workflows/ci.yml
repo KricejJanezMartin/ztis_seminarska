@@ -23,12 +23,7 @@ jobs:
       run: |
         poetry install --no-root
         sudo apt-get install ruby-full
-        echo 'export GEM_HOME="$HOME/.gem"' >> $HOME/.bashrc
-        source $HOME/.bashrc
-        gem install bundler
-        bundle config set --local path 'vendor/bundle'
-        bundle install
-        gem install hiptest-publisher
+        gem install hiptest-publisher --user-install
 
     - name: Regenerate tests
       run: hiptest-publisher --config-file hiptest-publisher.config --test-run-id 912099 --without=actionwords
