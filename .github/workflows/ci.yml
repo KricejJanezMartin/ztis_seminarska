@@ -21,8 +21,10 @@ jobs:
 
     - name: Install dependencies
       run: |
-        poetry install
+        poetry install --no-root
         sudo apt-get install ruby-full
+        echo 'export GEM_HOME="$HOME/.gem"' >> $HOME/.bashrc
+        source $HOME/.bashrc
         gem install hiptest-publisher
 
     - name: Regenerate tests
