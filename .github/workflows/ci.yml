@@ -5,6 +5,8 @@ on: [push, pull_request,workflow_dispatch]
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      PATH: ${{ format('{0}:{1}', '/home/runner/.local/share/gem/ruby/3.0.0/bin', env.PATH) }}
 
     steps:
     - name: Checkout code
@@ -24,7 +26,6 @@ jobs:
         poetry install
         sudo apt-get install ruby-full
         gem install hiptest-publisher --user-install
-        export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 
     - name: Regenerate tests
       run: hiptest-publisher --config-file hiptest-publisher.config --test-run-id 912056 --without=actionwords
